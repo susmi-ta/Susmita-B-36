@@ -1,0 +1,31 @@
+//maximum of 2 & 3 numbers using inline function in c++
+#include<iostream.h>
+#include<conio.h>
+class max{
+	public:
+
+		inline void maxtwo(int a, int b){
+			if(a>b)
+				cout<<"max is " <<a;
+			else
+				cout<<"max is " <<b;
+		}
+		inline void maxthree(int a, int b,int c){
+			if(a>b && a>c)
+				cout<<"max is "<<a;
+			else if(b>a && b>c)
+				cout<<"max is "<<b;
+			else
+				cout<<"max is "<<c;
+		}
+};
+void main(){
+	clrscr();
+	max m;
+	int x,y,z;
+	cout<<"enter three numbers: ";
+	cin>>x>>y>>z;
+	m.maxtwo(x,y);
+	m.maxthree(x,y,z);
+	getch();
+}

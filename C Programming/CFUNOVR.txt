@@ -1,0 +1,41 @@
+//maximum of 2,3,4 numbers using function overloading in c++ 
+#include<iostream.h>
+#include<conio.h>
+class max{
+	public:
+		void maximum(int a,int b){
+			if(a>b)
+				cout<<"max is "<<a<<endl;
+			else
+				cout<<"max is "<<b<<endl;
+		}
+		void maximum(int a,int b,float c){
+			if(a>b && a>c)
+				cout<<"max is "<<a<<endl;
+			else if(b>c && b>a)
+				cout<<"max is "<<b<<endl;
+			else
+				cout<<"max is "<<c<<endl;
+		}
+		void maximum(int a,int b, float c,long d){
+			if(a>b && a>c && a>d)
+				cout<<"max is "<<a<<endl;
+			else if(b>c && b>a && b>d)
+				cout<<"max is "<<b<<endl;
+			else if(c>a && c>b && c>d)
+				cout<<"max is "<<c<<endl;
+			else
+				cout<<"max is "<<d<<endl;
+		}
+};
+void main(){
+	clrscr();
+	int a,b; float c; long d;
+	max m;
+	cout<<"enter four numbers: "<<endl;
+	cin>>a>>b>>c>>d;
+	m.maximum(a,b);
+	m.maximum(a,b,c);
+	m.maximum(a,b,c,d);
+	getch();
+}
