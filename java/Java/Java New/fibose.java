@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class fibose {
+    public static void main(String[] args) {
+        // Scanner sc=new Scanner(System.in);
+        // System.out.println("Enter the nth term:");
+        // int n=sc.nextInt();
+        // int n1=0,n2=1;
+        // System.out.print("Fibonacci Series upto "+n+" is "+n1+" "+n2);
+        // for(int i=2;i<n;i++){
+        //     int n3=n1+n2;
+        //     System.out.print(" "+n3);
+        //     n1=n2;
+        //     n2=n3;
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter the nth term:");
+        int n= sc.nextInt();
+        int a=0,b=1;
+        System.out.println("Fibonacci Series upto "+n+" is");
+        for(int i=0;i<n;i++){
+            int c=a+b;
+            System.out.println(c+",");
+            a=b;
+            b=c;
+        }
+        
+    }
+}
